@@ -2,6 +2,14 @@
 
 ## Unreleased
 
+### Method note
+
+* `doc/how-we-inferred-the-isa.md`: how the uSIP and SCQ16 tables were
+  inferred from the firmware by static analysis (oracles, differential
+  analysis, source anchors, the packet search and its cost, the confidence
+  levels, what stays open), in a short and a long version. Linked from the
+  README.
+
 ### SCQ16 table update (229 forms), the open-reading marker, the broadcast ports, the confidence levels and the public test vectors
 
 * `isa/scq16_isa.json` / `scq16_opcodes.h`: 229 forms / 402 bit alternatives.
