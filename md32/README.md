@@ -100,7 +100,9 @@ table `isa/usip_isa.json` (760 forms, generated into `usip_opcodes.h` by
 `tools/gen_usip_tables.py`) and by the packet model implemented in
 `usip_decode.c`. The table is an empirical description, not a vendor
 specification: every form carries a confidence level (`high`, `medium`, `low`,
-`format-only`) that the `aoj` output reports under `opex.confidence`.
+`format-only`) that the `aoj` output reports under `opex.confidence`. How the
+table was inferred from the firmware, and what that inference can and cannot
+establish, is explained in [doc/how-we-inferred-the-isa.md](doc/how-we-inferred-the-isa.md).
 
 ### The packet model
 
@@ -462,7 +464,9 @@ all halfword patterns, randomized operands for every vendor instruction form,
 packed pairs, and the MT8173 VPU program image.
 
 See [doc/research.md](doc/research.md) for provenance, the binutils findings,
-MD380 distinction, and remaining research questions.
+MD380 distinction, and remaining research questions, and
+[doc/how-we-inferred-the-isa.md](doc/how-we-inferred-the-isa.md) for the method
+behind the uSIP and SCQ16 tables.
 
 ## Firmware exploration and strict ESIL execution
 
